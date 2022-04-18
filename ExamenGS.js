@@ -29,9 +29,9 @@ function mostCommonWord(parrafo, palabrasNoPermitidas) {
     });
   });
 
-  const sortable = Object.entries(wordsCount).sort(([, a], [, b]) => b - a);
+  const orden = Object.entries(wordsCount).sort(([, a], [, b]) => b - a);
 
-  return `Palabra más repetida: ${sortable[0][0]}, repeticiones ${sortable[0][1]}`;
+  return `Palabra más repetida: ${orden[0][0]}, repeticiones ${orden[0][1]}`;
 }
 
 getOccurrence = (array, value) => {
@@ -67,8 +67,15 @@ main();
 function MaxProfit(pricesAsString) {
   /*     2.- En la segunda sección "pricesAsString" Representa el precio de un coche por semana a lo largo del tiempo.  Dado lo siguen obtener la máxima ganancia que se le puede sacar si se supiera cuándo comprar y cuando vender el carro. 
         No se puede vender si el carro aun no a sido comprado. */
-
+    let pricesByWk = {}
+    const prices = pricesAsString.split(",");
+    prices.forEach((pr,i)=>{
+        pricesByWk[`sem_${i}`]=pr
+    })
     
+  const orden = Object.entries(pricesByWk).sort(([, a], [, b]) => a-b);
+
+  return `Vender el auto en ${orden[0][0]} porque cuesta ${orden[0][1]}`;
 }
 
 function main2() {
