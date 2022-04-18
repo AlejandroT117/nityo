@@ -1,0 +1,32 @@
+/* 1 */
+{
+    "_id" : ObjectId("624b88db318361698eb65b5a"),
+    "nombre" : "Luis",
+    "paterno" : "Lopez",
+    "materno" : "Aviles",
+    "edad" : 31,
+    "genero" : "masculino",
+    "especialidad" : "Developer"
+}
+
+/* 2 */
+{
+    "_id" : ObjectId("624b8924318361698eb65b68"),
+    "nombre" : "Jose",
+    "paterno" : "Perez",
+    "materno" : "Arellano",
+    "edad" : 28,
+    "genero" : "masculino",
+    "especialidad" : "Developer"
+}
+
+/* 3 */
+{
+    "_id" : ObjectId("624b8941318361698eb65b6d"),
+    "nombre" : "Pedro",
+    "paterno" : "Angeles",
+    "materno" : "Maqueda",
+    "edad" : 29,
+    "genero" : "masculino",
+    "especialidad" : "Developer"
+}

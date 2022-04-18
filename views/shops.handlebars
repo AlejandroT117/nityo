@@ -1,0 +1,29 @@
+<h1>Tiendas con más de una subcategoría</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre Propietario</th>
+      <th scope="col">Nombre de tienda</th>
+      <th scope="col">Subcategorias</th>
+    </tr>
+  </thead>
+  <tbody id="tb">
+    {{#each shops}}
+      <tr>
+        <td>{{this.nombrePropietario}}</td>
+        <td>{{this.nombreTienda}}</td>
+        <td>
+          {{#each this.categoria.subcategorias}}
+          <p>{{this.nombre}}</p>
+          {{/each}}
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>

@@ -1,0 +1,27 @@
+<h1>Tiendas creadas después del 4/4/2022</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nombre Propietario</th>
+      <th scope="col">Nombre de tienda</th>
+      <th scope="col">Fecha de Alta</th>
+    </tr>
+  </thead>
+  <tbody id="tb">
+    {{#each shops}}
+      <tr>
+        <td>{{this.nombrePropietario}}</td>
+        <td>{{this.nombreTienda}}</td>
+        <td>
+          <p>{{this.fechaHoraAlta}}</p>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>

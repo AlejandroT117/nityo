@@ -1,0 +1,21 @@
+{
+  "name": "examen",
+  "version": "1.0.0",
+  "description": "Examen nityo Alejandro Trejo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "dev": "nodemon ."
+  },
+  "author": "A.T",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.5",
+    "moment": "^2.29.3",
+    "mongoose": "^6.3.0"
+  }
+}

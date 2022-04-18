@@ -1,0 +1,22 @@
+<h1>Lista de registros por categoría</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Categoría</th>
+      <th scope="col">Info</th>
+    </tr>
+  </thead>
+  <tbody id="tb">
+    {{#each nByCat}}
+      <tr>
+        <td><a href="/only/{{this._id}}">{{this._id}}</a></td>
+        <td>{{this.count}}</td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.11.1/dist/js/uikit-icons.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>
